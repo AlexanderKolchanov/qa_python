@@ -7,6 +7,11 @@ class TestBooksCollector:
         """Проверяем, что новая коллекция возвращает пустой словарь"""
         assert books_collection.get_books_genre() == {}
 
+    def test_get_books_genre(self, books_collection):
+        """Проверяем, что метод get_books_genre возвращает словарь с добавленной книгой"""
+        books_collection.add_new_book('1984')
+        assert books_collection.get_books_genre() == {'1984': ''}    
+
     def test_get_books_genre_with_books(self, books_collection):
         """Проверяем получение словаря жанров после добавления книг"""
         books_collection.add_new_book('1984')
