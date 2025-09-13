@@ -18,12 +18,7 @@ class TestBooksCollector:
         books_collection.add_new_book('Маленький принц')
         assert books_collection.get_books_genre() == {'1984': '', 'Маленький принц': ''}
 
-    def test_add_new_book_add_two_books(self, books_collection):
-        """Проверяем добавление двух разных книг"""
-        books_collection.add_new_book('1984')
-        books_collection.add_new_book('Маленький принц')
-        assert books_collection.get_books_genre() == {'1984': '', 'Маленький принц': ''}
-        
+    
     def test_add_new_book_already_added_book(self, books_collection):
         """Проверяем, что дубликаты книг не добавляются"""
         books_collection.add_new_book('1984')
