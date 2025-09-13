@@ -8,7 +8,6 @@
 - `test_get_books_genre_with_books` - получение словаря жанров после добавления книг
 
 ### 2. Тестирование добавления книг
-- `test_add_new_book_add_two_books` - добавление двух разных книг
 - `test_add_new_book_already_added_book` - попытка добавления уже существующей книги
 - `test_add_new_book_name_out_of_range` - добавление книг с некорректной длиной названия
 - `test_add_new_book_name_in_the_range` - добавление книг с корректной длиной названия
